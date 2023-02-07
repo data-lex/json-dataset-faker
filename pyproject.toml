@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "json-dataset-faker"
+version = "0.1.0"
+description = ""
+authors = ["Alexandre Gomes <data-lex@github.com>"]
+readme = "README.md"
+packages = [{include = "json_dataset_faker"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+genson = "^1.2.2"
+jsf = "^0.7.1"
+
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0.0"
+flake8 = "^6.0.0"
+black = "^23.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
