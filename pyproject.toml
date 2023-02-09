@@ -10,7 +10,9 @@ packages = [{include = "json_dataset_faker"}]
 python = "^3.11"
 genson = "^1.2.2"
 jsf = "^0.7.1"
-
+boto3 = "^1.26.66"
+mypy-boto3-s3 = "^1.26.62"
+awslambdaric = "^2.0.4"
 
 [tool.poetry.group.dev.dependencies]
 jupyter = "^1.0.0"
