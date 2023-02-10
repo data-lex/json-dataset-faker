@@ -1,1 +1,5 @@
 .vscode/
+iac/.terraform/
+iac/.terraform.lock.hcl
+iac/.terraform.tfstate.lock.info
+iac/terraform.tfstate

@@ -11,6 +11,9 @@ ARG LAMBDA_TASK_ROOT
 RUN mkdir -p ${LAMBDA_TASK_ROOT}
 
 # Setting poetry envs
+# POETRY_HOME: installs poetry to the specified location
+# POETRY_VIRTUALENVS_IN_PROJECT: creates the .venv in the project's root
+# POETRY_NO_INTERACTION: do not ask any interactive questions
 ENV POETRY_HOME="/opt/poetry" \
     POETRY_VIRTUALENVS_IN_PROJECT=1 \
     POETRY_NO_INTERACTION=1
@@ -47,11 +50,13 @@ FROM python:3.11-slim-bullseye
 ARG LAMBDA_TASK_ROOT
 RUN mkdir -p ${LAMBDA_TASK_ROOT}
 
+# PYTHONDONTWRITEBYTECODE: prevents writing bytecode to disk
+# PYTHONUNBUFFERED: ensures that the Python are sent to the terminal
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
     PATH="${LAMBDA_TASK_ROOT}/.venv/bin:$PATH"
 
-# Set working directory to function root directory
+# Set working directory
 WORKDIR ${LAMBDA_TASK_ROOT}
 
 # Copy the built dependencies
@@ -63,4 +68,5 @@ COPY json_dataset_faker ${LAMBDA_TASK_ROOT}
 # Set Lambda Runtime Interface Client as the Python entrypoint
 ENTRYPOINT [ "/var/task/.venv/bin/python", "-m", "awslambdaric" ]
 
+# Specifies the function handler
 CMD [ "main.handler" ]

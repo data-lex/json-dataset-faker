@@ -10,6 +10,6 @@ variable "aws_secret_key" {
   type = string
 }
 
-variable "aws_ecr_image_uri" {
+variable "aws_ecr_uri" {
   type = string
 }

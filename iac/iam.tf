@@ -27,7 +27,10 @@ EOF
         },
         {
           Effect = "Allow"
-          Action = "s3:PutObject",
+          Action = [
+            "s3:GetObject",
+            "s3:PutObject"
+          ]
           Resource = "arn:aws:s3:::*"
         }
       ]
