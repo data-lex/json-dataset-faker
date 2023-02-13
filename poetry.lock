@@ -275,18 +275,18 @@ css = ["tinycss2 (>=1.1.0,<1.2)"]
 
 [[package]]
 name = "boto3"
-version = "1.26.66"
+version = "1.26.69"
 description = "The AWS SDK for Python"
 category = "main"
 optional = false
 python-versions = ">= 3.7"
 files = [
-    {file = "boto3-1.26.66-py3-none-any.whl", hash = "sha256:3a1ffeecfe6e61d414617294b822b008e604ccfd83434c483f429a2922db314d"},
-    {file = "boto3-1.26.66.tar.gz", hash = "sha256:ebea98f3054b467caf6c8aead9f0ef78395a78bce78b04db12fde452c02b3734"},
+    {file = "boto3-1.26.69-py3-none-any.whl", hash = "sha256:9a0a29179957cb26fa8c3c1fddf66b18efaeaf633e08db5fb53815ffb0421419"},
+    {file = "boto3-1.26.69.tar.gz", hash = "sha256:eb8cde24a4c5755c35126e8cd460e6b51c63d04292419e7e95721232720c7e5b"},
 ]
 
 [package.dependencies]
-botocore = ">=1.29.66,<1.30.0"
+botocore = ">=1.29.69,<1.30.0"
 jmespath = ">=0.7.1,<2.0.0"
 s3transfer = ">=0.6.0,<0.7.0"
 
@@ -295,14 +295,14 @@ crt = ["botocore[crt] (>=1.21.0,<2.0a0)"]
 
 [[package]]
 name = "botocore"
-version = "1.29.66"
+version = "1.29.69"
 description = "Low-level, data-driven core of boto 3."
 category = "main"
 optional = false
 python-versions = ">= 3.7"
 files = [
-    {file = "botocore-1.29.66-py3-none-any.whl", hash = "sha256:772da07d2a49a9d2dc8d23e060e88eb72881e58074be7c813aa946ecdbd0e5b5"},
-    {file = "botocore-1.29.66.tar.gz", hash = "sha256:4d1ac019e677cc39e615f9d473fa658ea22a8d906c1c562f9406b5d0cd854cbd"},
+    {file = "botocore-1.29.69-py3-none-any.whl", hash = "sha256:2a4ab8bcb3177daa425019e125c09996b9a6a1a62bb0baaaeeb86ffd552719cc"},
+    {file = "botocore-1.29.69.tar.gz", hash = "sha256:7e1bebca013544fbc298cb58603bfccd5f71b49c720a5c33c07cf5dfc8145a1f"},
 ]
 
 [package.dependencies]
@@ -613,14 +613,14 @@ tests = ["asttokens", "littleutils", "pytest", "rich"]
 
 [[package]]
 name = "faker"
-version = "16.7.0"
+version = "16.8.1"
 description = "Faker is a Python package that generates fake data for you."
 category = "main"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "Faker-16.7.0-py3-none-any.whl", hash = "sha256:c522c78f2d7572724bde05de8571205e9a594f95b57e08e388e0677976ebd400"},
-    {file = "Faker-16.7.0.tar.gz", hash = "sha256:4b98c197169e083304afd12c1ee1e5101f5c817161c3d690eb318a15b805108d"},
+    {file = "Faker-16.8.1-py3-none-any.whl", hash = "sha256:64dcf95eee9f00d2547f29f6762aec80fc3ccbe3752bfa2c45082a6e2cc4d74a"},
+    {file = "Faker-16.8.1.tar.gz", hash = "sha256:ad181f6f9cdc0f7d70ea6eaea35ab4b6549391fbaaea7629cc567aeb2757d296"},
 ]
 
 [package.dependencies]
@@ -729,14 +729,14 @@ test = ["flaky", "ipyparallel", "pre-commit", "pytest (>=7.0)", "pytest-asyncio"
 
 [[package]]
 name = "ipython"
-version = "8.9.0"
+version = "8.10.0"
 description = "IPython: Productive Interactive Computing"
 category = "dev"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "ipython-8.9.0-py3-none-any.whl", hash = "sha256:9c207b0ef2d276d1bfcfeb9a62804336abbe4b170574ea061500952319b1d78c"},
-    {file = "ipython-8.9.0.tar.gz", hash = "sha256:71618e82e6d59487bea059626e7c79fb4a5b760d1510d02fab1160db6fdfa1f7"},
+    {file = "ipython-8.10.0-py3-none-any.whl", hash = "sha256:b38c31e8fc7eff642fc7c597061fff462537cf2314e3225a19c906b7b0d8a345"},
+    {file = "ipython-8.10.0.tar.gz", hash = "sha256:b13a1d6c1f5818bd388db53b7107d17454129a70de2b87481d555daede5eb49e"},
 ]
 
 [package.dependencies]
@@ -754,7 +754,7 @@ stack-data = "*"
 traitlets = ">=5"
 
 [package.extras]
-all = ["black", "curio", "docrepr", "ipykernel", "ipyparallel", "ipywidgets", "matplotlib", "matplotlib (!=3.2.0)", "nbconvert", "nbformat", "notebook", "numpy (>=1.20)", "pandas", "pytest (<7)", "pytest (<7.1)", "pytest-asyncio", "qtconsole", "setuptools (>=18.5)", "sphinx (>=1.3)", "sphinx-rtd-theme", "stack-data", "testpath", "trio", "typing-extensions"]
+all = ["black", "curio", "docrepr", "ipykernel", "ipyparallel", "ipywidgets", "matplotlib", "matplotlib (!=3.2.0)", "nbconvert", "nbformat", "notebook", "numpy (>=1.21)", "pandas", "pytest (<7)", "pytest (<7.1)", "pytest-asyncio", "qtconsole", "setuptools (>=18.5)", "sphinx (>=1.3)", "sphinx-rtd-theme", "stack-data", "testpath", "trio", "typing-extensions"]
 black = ["black"]
 doc = ["docrepr", "ipykernel", "matplotlib", "pytest (<7)", "pytest (<7.1)", "pytest-asyncio", "setuptools (>=18.5)", "sphinx (>=1.3)", "sphinx-rtd-theme", "stack-data", "testpath", "typing-extensions"]
 kernel = ["ipykernel"]
@@ -764,7 +764,7 @@ notebook = ["ipywidgets", "notebook"]
 parallel = ["ipyparallel"]
 qtconsole = ["qtconsole"]
 test = ["pytest (<7.1)", "pytest-asyncio", "testpath"]
-test-extra = ["curio", "matplotlib (!=3.2.0)", "nbformat", "numpy (>=1.20)", "pandas", "pytest (<7.1)", "pytest-asyncio", "testpath", "trio"]
+test-extra = ["curio", "matplotlib (!=3.2.0)", "nbformat", "numpy (>=1.21)", "pandas", "pytest (<7.1)", "pytest-asyncio", "testpath", "trio"]
 
 [[package]]
 name = "ipython-genutils"
@@ -973,25 +973,28 @@ test = ["codecov", "coverage", "ipykernel (>=6.14)", "mypy", "paramiko", "pre-co
 
 [[package]]
 name = "jupyter-console"
-version = "6.4.4"
+version = "6.5.0"
 description = "Jupyter terminal console"
 category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "jupyter_console-6.4.4-py3-none-any.whl", hash = "sha256:756df7f4f60c986e7bc0172e4493d3830a7e6e75c08750bbe59c0a5403ad6dee"},
-    {file = "jupyter_console-6.4.4.tar.gz", hash = "sha256:172f5335e31d600df61613a97b7f0352f2c8250bbd1092ef2d658f77249f89fb"},
+    {file = "jupyter_console-6.5.0-py3-none-any.whl", hash = "sha256:87826ab6c8c418731fd78f14ec504df735e79554e35784d0a6379018bb3ef9d7"},
+    {file = "jupyter_console-6.5.0.tar.gz", hash = "sha256:67e68f1da16bc3f6f78ed846dd5543ec0679369f8504734f10bfd206faae39ea"},
 ]
 
 [package.dependencies]
-ipykernel = "*"
+ipykernel = ">=6.14"
 ipython = "*"
 jupyter-client = ">=7.0.0"
-prompt-toolkit = ">=2.0.0,<3.0.0 || >3.0.0,<3.0.1 || >3.0.1,<3.1.0"
+jupyter-core = ">=4.12,<5.0.0 || >=5.1.0"
+prompt-toolkit = ">=3.0.30"
 pygments = "*"
+pyzmq = ">=17"
+traitlets = ">=5.4"
 
 [package.extras]
-test = ["pexpect"]
+test = ["pexpect", "pytest"]
 
 [[package]]
 name = "jupyter-core"
