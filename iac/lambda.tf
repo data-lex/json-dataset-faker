@@ -1,4 +1,4 @@
-resource "aws_lambda_function" "json_dataset_faker" {
+resource "aws_lambda_function" "lambda_json_dataset_faker" {
   function_name = "json-dataset-faker"
   image_uri     = var.aws_ecr_uri
   memory_size   = 256

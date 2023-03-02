@@ -1,4 +1,4 @@
-resource "aws_iam_role" "json_dataset_faker_role" {
+resource "aws_iam_role" "role_json_dataset_faker" {
   name               = "jsonDataSetFakerRole"
   assume_role_policy = <<EOF
 {

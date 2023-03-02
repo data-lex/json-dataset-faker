@@ -1,0 +1,6 @@
+{
+    "input_bucket": "bucket_name",
+    "input_key": "object_path",
+    "output_bucket": "bucket_name",
+    "label": "schema_name"
+}
